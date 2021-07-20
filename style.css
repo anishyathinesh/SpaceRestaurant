@@ -1,0 +1,668 @@
+/*  */
+html {
+    height: auto;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.countdown {
+  position: fixed;
+  background: rgba(250, 194, 194, 0.7);
+  color: black;
+  padding: 2%;
+  padding-top: 0.2%;
+  font-family: 'Cinzel', serif;
+  font-size: 150%;
+  border: 4px solid #C94085;
+  border-radius: 5px;
+}
+
+.quick {
+  position: fixed;
+  width: 476px;
+  height: 120px;
+  top: 15%;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+.quickDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.bg {
+  background-image: url('bg.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position: fixed; */
+  min-width: 100%;
+  overflow: auto;
+  min-height: auto;
+  /* min-height: 400px; */
+}
+
+.name {
+  position: fixed;
+  top: 50%;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.inputBox {
+  border: 4px solid #C94085;
+  height: 40px;
+  width: 250px;
+  font-size: 24px;
+  background-color: rgba(250, 194, 194, 0.7);
+  font-family: 'Cinzel', serif;
+}
+
+.speedButton {
+  position: fixed;
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  top: 60%;
+  background-color: rgba(177, 31, 239, 0);
+  color: white;
+  /* border-color: rgba(177, 31, 239, 0); */
+  border-color: white;
+}
+
+.welcomeImg {
+  background-image: url('welcomeImg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.c3po {
+  bottom: 10px;
+  margin-left: 20px;
+  position: fixed;
+}
+.roboMessage{
+  position: fixed;
+  width: 964px;
+  left: 26%;
+  bottom: -2%;
+  font-size: 32px;
+  text-align: left;
+  color: #103900;
+  padding: 50px;
+  font-family: 'Cinzel', serif;
+  background-color:rgba(227, 251, 188, 0.7);
+  border: 4px solid green;
+  /* outline: 2px solid white; */
+  box-shadow: 0 0 3pt 2pt #E9FAE3;
+  border-radius: 10px;
+}
+.roboName{
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  background-color:rgba(227, 251, 188, 0.7);
+  border: 4px solid green;
+  border-radius: 10px;
+  box-shadow: 0 0 3pt 2pt #E9FAE3;
+  position: fixed;
+  left: 26%;
+  top: 64%;
+  text-align: center;
+  padding: 15px;
+}
+/* .next{
+  position: fixed;
+  right: 2%;
+  top: 3%;
+  color: #E9FAE3;
+  border: 2px solid #E9FAE3;
+  background-color: rgba(177, 31, 239, 0);
+  transition: color 1s;
+  padding: 15px;
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+}
+.next:hover{
+  color: green;
+  border: 2px solid green;
+} */
+
+.navBar{
+  background-color: #DFC9EC;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: -1%;
+  margin-right: -2%;
+  margin-left: -2%;
+  padding: 1%;
+  padding-bottom: 2px;
+  /* width: 100%; */
+  border-bottom: 10px, solid, white;
+  /* display: inline-block; */
+  bottom: 0px;
+  width: 149%;
+  margin-left:-25%;
+  margin-right:0%;
+  padding-top: 2%;
+}
+.navBarBottom{
+  background-color: rgba(224, 202, 236, 0.7);
+  overflow: hidden; 
+  display: inline-block;
+  bottom: 0px;
+  width: 150%;
+  height: 100%;
+  margin-left:-24.5%;
+  margin-right:-1%;
+  margin-top: 6%;
+  margin-bottom: -1%;
+  border-top: 3px white solid;
+  border-bottom: 3px white solid;
+  padding-top: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom:2%;
+  /* padding: 2%; */
+  transition: all ease-in-out 1s;
+}
+.wrap{
+  width:1000px;
+  margin: 0 auto;
+}
+.bNavBarLinks{
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  margin-bottom: 2%;
+  width: 1200px;
+   padding-left: 8%;
+}
+.navElements{
+  color: #7D387D;
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  transition: all ease-in-out 1s;
+  /* font-weight: bold; */
+}
+.navElements:hover {
+  color: white;
+  text-shadow: 2px 2px #7D387D;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
+}
+article{
+  padding: 1%;
+  margin-left: 6%;
+  margin-right: 6%;
+  white-space: nowrap;
+}
+.navHome{
+  color: #7D387D;
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  text-decoration: none;
+  transition: all ease-in-out 1s;
+  /* letter-spacing: 3px; */
+  /* font-weight: bold; */
+}
+.navHome:hover{
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: white;
+  -webkit-text-stroke: 0.5px #7D387D;
+  -webkit-animation: text-shadow-drop-top 1s ease-in-out both;
+	animation: text-shadow-drop-top 1s ease-in-out both;
+}
+.navFlex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+}
+.homeImg{
+  margin-top: 3%;
+  margin-left: -1.45%;
+  height: 50%;
+  width: 101%;
+}
+.praiseBG{
+  width: 90%;
+  height: 610px;
+  left: 4%;
+  top: 98%;
+  margin-left: 4%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #E9FAE3; */
+  background: linear-gradient(180deg, #bf4bf1, #2e5fef, #ef2e2e, #21d33a);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+.homeText{
+  width: 100%;
+  height: 0px;
+  margin: 0%;
+  padding: 4%;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  font-family: 'Cinzel', serif;
+  padding-left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seeMenu{
+  /* width: 100%;
+  height: 120px;
+  top: 15%; */
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Cinzel', serif;
+  display: flex;
+  justify-content: center;
+  vertical-align: text-top;
+  margin: -1%;
+  transition: all ease-in-out 1s;
+  animation: color-change 1s infinite;
+}
+.seeMenu:hover{
+background-image: linear-gradient(to left,red, #c862f3, blue,red, #c862f3, blue, red, #c862f3, blue);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-stroke: .3px white;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 40px;
+}
+
+.columns{
+  align-items: center;
+  width: 45%;
+  height: 88%;
+  border: 2px solid black;
+  outline: 2px outset white;
+  margin: 3%;
+}
+.praiseHeader{
+  padding: 4%;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  font-family: 'Cinzel', serif;
+  /* -webkit-text-stroke: .75px white; */
+  text-shadow: 2px 2px #c862f3;
+}
+.praisePlanet{
+  /* margin-left: 10%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stars{
+  /* margin-bottom: 26%;
+  margin-left: 10%; */
+  font-weight: bold;
+  font-size: 33px;
+  width: 30%;
+  margin-right: 1px;
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px black;
+  position: relative;
+  left: 10%;
+  margin-bottom: 19%;
+}
+.ratings{
+  font-style: italic;
+  font-size: 25px;
+  color: white;
+  font-family: 'Cinzel', serif;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  /* margin-left: 50%; */
+  position: relative;
+  left: 48%;
+  top: -103%;
+  margin-bottom: 14%;
+}
+
+.magazines{
+  font-size: 15px;
+  color: white;
+  font-family: 'Cinzel', serif;
+  display: inline-block;
+  position: relative;
+  top: -158%;
+  margin-bottom: 15%;
+  left: 20%;
+}
+
+.menuBG{
+  background-image: url('menuBG.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position: fixed; */
+  /* min-width: 100%; */
+  /* note to self set width to 1024 px and heigtht to auto. */
+  overflow: auto;
+  min-height: auto; 
+}
+.menuHeader{
+  background-image: url(beef2.png);
+  border: 4px white double;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 135%;
+  height: 61%;
+  margin-left: -18%;
+  margin-right: 203%;
+  padding-top: 0%;
+}
+.menuSections{
+  color: #A1B5EF;
+  text-shadow: -1px -1px 0 #6283E4, 1px -1px 0 #6283E4, -1px 1px 0 #6283E4, 1px 1px 0 #6283E4;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  /* lines */
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+}
+.menuSections:before, .menuSections:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+.menuSections:after {
+  margin: 0 -55% 0 .5em;
+}
+
+.itemFlex{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.smallFlex{
+  display: flex;
+  flex-direction: column;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-out-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes fade-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.item{
+  display: inline;
+  /* width: 25%; */
+  text-align: center;
+  color: white;
+  margin-right: 10%;
+  margin-left:10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 24px;
+  font-family: 'Cinzel', serif;
+  --bg-url: url(felucian.jpg);
+  /* transition: all ease-in-out 1s; */
+  -webkit-transition: background-image 0.2s ease-in-out;
+transition: background-image 0.2s ease-in-out;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-8-10 17:50:7
+*/
+
+/**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.item:hover:after {
+  content: "";
+  background-image: var(--bg-url); 
+  background-size: 100% 100%;
+  margin-left: 22%;
+  display: block;
+  height: 266px;
+  width: 437px;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  left: 150px;
+  top: 50px;
+  transition: all ease-in-out 1s
+}
+
+/* .item:hover + .desc{
+  display: inline-block; 
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-family: 'Cinzel', serif;
+  transition: all ease-in-out 1s;
+} */
+.desc{
+  display: inline-block; 
+  text-align: center;
+  color: white;
+  margin-bottom: 2%;
+  font-size: 12px;
+  font-family: 'Cinzel', serif;
+  transition: all ease-in-out 1s;
+}
+
+/* about us */
+
+.aboutUsbg{
+  background-image: url('aboutUs_bg.gif');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* position: fixed; */
+  /* min-width: 100%;
+  overflow: auto;
+  min-height: auto;  */
+}
+
+.aboutUs_flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutUs_text {
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  font-size: 25px;
+  height: 80%;
+  width: 550px;
+  margin-left: 13%;
+  margin-top: 11%;
+  margin-bottom: 2%;
+  line-height: 1.2;
+}
+
+.team_bg{
+  background-image: url('team_bg.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team_flex{
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  width: 1300px;
+  margin-left: -17%;
+  margin-top: 4%;
+}
+/* mark */
+
+
+
+.player {
+  position: relative;
+  width: 1200px;
+  height: 250px;
+  background-color: rgba(177, 141, 226, 0.92);
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  margin-top: 4%;
+  margin-left: 9%;
+  padding: 5 16px;
+}
+  /* .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 50%;
+    padding: 0 16px; */
+.name {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+}
+  .btns {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 12%;
+    margin-left: 34%;
+  }
+  .progress {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+@font-face {
+    font-family: iconfont;
+    src: url('//static0.qianqian.com/web/st/font/iconfont-4e6.woff') format('woff')
+}
+
+.iconfont {
+        font-family: iconfont!important;
+        font-size: 68px;
+        color: white;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+.icon-play:before {
+  content: "\e616"
+}
+ .icon-next:before {
+        content: "\e60a";
+        margin-right: 400px;
+    }
+    
